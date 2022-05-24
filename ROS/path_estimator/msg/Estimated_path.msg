@@ -1,0 +1,10 @@
+float32 x
+float32 y
+float32 z
+float64 vx
+float64 vy
+float64 vz
+float64 droneX
+float64 droneY
+float64 droneZ
+time timeStamp

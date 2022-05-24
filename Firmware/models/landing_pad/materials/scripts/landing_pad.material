@@ -1,0 +1,13 @@
+material landing_pad/pad
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture landing_pad.png
+			}
+		}
+	}
+}

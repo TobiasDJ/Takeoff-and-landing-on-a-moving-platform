@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="/home/tdh/catkin_ws/src/simulation_package/launch/mavros_posix_sitl.launch"/>
+
+    <node name="simulation_package" pkg="simulation_package" type="initiate_drone_node" output="screen"/>
+</launch>
