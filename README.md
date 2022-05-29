@@ -1,4 +1,4 @@
-# Take-off-and-landing-on-a-moving-platform
+# Takeoff and landing on a moving platform
 
 This project revolves around expanding drone capabilities into challenging operations. Quadrotor unmanned aerial vehicles (UAVs) have short flight times due to limited power source. To expand their capabilities, moving landing platforms/motherships can be introduced, housing, recharging, and deploying them as needed. A difficult problem made even more challenging, when considering the aspect of difficult weather conditions, which can often occur in real-world applications
 
