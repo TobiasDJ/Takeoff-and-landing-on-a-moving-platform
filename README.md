@@ -1,11 +1,20 @@
 # Takeoff and landing on a moving platform
 
-This project revolves around expanding drone capabilities into challenging operations. Quadrotor unmanned aerial vehicles (UAVs) have short flight times due to limited power source. To expand their capabilities, moving landing platforms/motherships can be introduced, housing, recharging, and deploying them as needed. A difficult problem made even more challenging, when considering the aspect of difficult weather conditions, which can often occur in real-world applications
+This project revolves around expanding drone capabilities into challenging operations, by means of introducing a moveable platform for recharging purposes, which the UAVs can autonomously detect, track, and land on. This problem is made even more challenging, considering the aspect of difficult weather conditions, which often occur in real-world applications.
 
-The proposed solution is a autonomous control system, created and tested utilizing a Gazebo-based simulation, which includes the PX4 autopilot through its SITL. This allows the control off a computer modelled vehicle in a powerful 3D simulated world. Furthermore, the simulation will include a computer modelled moving platform.
+The project will require the development of a simulation-based system to demonstrate take-off and landing in challenging conditions. The platform’s position should be disturbed to simulate the surface of a ship or another moving platform. The drone itself is also to be disturbed in other ways to simulate challenging wind conditions.
+The proposed solution will need to incorporate:
+ 1.	Simulate an UAV alongside its essential components and control. 
+ 2.	Simulate a physical platform and its movement. 
+ 3.	Initiate take off and maintain an altitude without adverse wind conditions.
+ 4.	Initiate take off and maintain altitude adverse wind conditions.
+ 5.	Detect a moving target.
+ 6.	Estimate the planned path and future positions for a moving target.
+ 7.	Align planned path to a UAV trajectory compliant with constraints for dynamics and time 
+ 8.	Land on a moving platform without adverse wind conditions.
+ 9.	Land on a moving platform with adverse wind conditions
 
-Onboard the UAV a camera sensor is integrated to detect and track the moving platform. The platform is detected with feature-based object detection using KAZE features, an algorithm detecting and describing features in a nonlinear scale space by means of nonlinear diffusion filtering. 
-Based on detected and tracked positions of the moving platform, predictions of future positions are calculated based on the formulas for constant movement and Kalman filtering. This is aligned with the drone specifications and current position, to land the UAV based on the tracking and estimations made. 
+
 
 The project consists of four packages:
 
